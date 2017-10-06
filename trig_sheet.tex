@@ -36,7 +36,8 @@
 \begin{minipage}{0.97\textwidth}
 %% Page #1 Diagrams
 % Two columns for diagrams
-\begin{multicols}{2} \begin{enumerate}  % P1_DIAGRAMS
+\begin{multicols}{2}  % P1_DIAGRAMS
+\begin{enumerate}
 	\item[]
 		% Small vertical buffer
 		\phantom{a} \vspace{-0.2cm}
@@ -44,7 +45,8 @@
 		\vspace{-0.7cm}
 	\item[] 
         %% TRIANGLE DIAGRAM %%
-		\begin{multicols}{2} \begin{enumerate}
+		\begin{multicols}{2}
+		\begin{enumerate}
 			\item[] \phantom{a}
 				\hspace{-0.7cm}
 				\begin{tikzpicture}[scale=1.75]
@@ -68,9 +70,11 @@
 					\llap{$\tan{\theta}$} & = \frac{\textrm{opp}}{\textrm{adj}} \quad
 							\cot{\theta}  = \frac{\textrm{adj}}{\textrm{opp}} &
 				\end{flalign*}
-		\end{enumerate} \end{multicols}
+		\end{enumerate}
+		\end{multicols}
 	\item[]
-		\begin{multicols}{2} \begin{enumerate}
+		\begin{multicols}{2}
+		\begin{enumerate}
 			\item[]
 				%% CIRCLE AND ANGLE DIAGRAM %%
 				\hspace{-0.7cm}
@@ -98,7 +102,8 @@
 					\llap{$\tan{\theta}$} &= \frac{y}{x} \quad \cot{\theta} = \frac{x}{y} & \\
 					\phantom{a} &
 				\end{flalign*}
-		\end{enumerate} \end{multicols}
+		\end{enumerate}
+		\end{multicols}
 	\item[]
 		%% UNIT CIRCLE %%
 		\phantom{a} 
@@ -142,8 +147,7 @@
 			}
 			% label each angle in radians
 			% x: angle, xtext: radian label, xang: rotation of label
-			\foreach \x / \xtext / \xang in
-			{
+			\foreach \x / \xtext / \xang in {
 				30 / \frac{\pi}{6} / -60,
 				45 / \frac{\pi}{4} / -45,
 				60 / \frac{\pi}{3} / -30,
@@ -165,8 +169,7 @@
 			}
 			% place Cartesian coordinates around circle
 			% x: angle, xtext: x value, ytext: y value, xang: label rotation angle
-			\foreach \x / \xtext / \ytext / \xang in
-			{
+			\foreach \x / \xtext / \ytext / \xang in {
 				% the coordinates for the first quadrant
 				30 / \frac{\sqrt{3}}{2} / \frac{1}{2} / 30,
 				45 / \frac{\sqrt{2}}{2} / \frac{\sqrt{2}}{2} / 45,
@@ -192,11 +195,13 @@
 			\draw (0, -1.15) node[fill=white] {$(0,-1)$};
 			\draw (0, 1.15) node[fill=white] {$(0,1)$};
 		\end{tikzpicture}
-\end{enumerate} \end{multicols}  % P1_DIAGRAMS
+\end{enumerate}
+\end{multicols}  % P1_DIAGRAMS
 
 %% Page #1 Trig Identities %%
 % Two columns for identities
-\begin{multicols}{2} \begin{enumerate}  % P1_TRIG_IDENTITIES
+\begin{multicols}{2}  % P1_TRIG_IDENTITIES
+\begin{enumerate}
 	\item[] 
 		\textbf{\underline{Reciprocal Identities}}
 		\begin{flalign*}
@@ -281,10 +286,13 @@
 			\cos{\theta}\sin{\phi} &= \frac{1}{2} \left[ \sin{(\theta + \phi)} -
 					\sin{(\theta - \phi)} \right] &
 		\end{flalign*}
-\end{enumerate} \end{multicols}  % P1_TRIG_IDENTITIES
+\end{enumerate}
+\end{multicols}  % P1_TRIG_IDENTITIES
 % Small vertical buffer
 \phantom{a} \vspace{-0.6cm}
-\end{minipage}} \end{center}
+\end{minipage}
+} % fbox
+\end{center}
 
 \newpage
 
@@ -299,7 +307,8 @@
 	%% DERIVATIVES %%
 	\phantom{a} %\vspace{-0.1cm}
 	\textbf{\underline{Basic Differentiation Rules}}
-	\begin{multicols}{3} \begin{enumerate}
+	\begin{multicols}{3}
+	\begin{enumerate}
 		\item \ddx{cu} = $cu'$
 		\item \ddx{u \pm v} = \m{u' \pm v'}
 		\item \ddx{uv} = \m{uv' + u'v}
@@ -336,12 +345,14 @@
 		\item \ddx{\coth^{-1} u} = \m{\dfrac{u'}{1 - u^2}}
 		\item \ddx{\sech^{-1} u} = \m{\dfrac{-u'}{u \sqrt{1 - u^2}}}
 		\item \ddx{\csch^{-1} u} = \m{\dfrac{-u'}{| u | \sqrt{1 + u^2}}}
-	\end{enumerate}\end{multicols}
+	\end{enumerate}
+	\end{multicols}
 
 	%% INTEGRALS %%
 	\phantom{a}
 	\textbf{\underline{Basic Integration Formulas}}
-	\begin{multicols}{2} \begin{enumerate}
+	\begin{multicols}{2}
+	\begin{enumerate}
 		\item \m{\int \! kf(u) \, du} = \m{k \int \! f(u) \, du}
 		\item \m{\int \! [f(u) \: \pm \: g(u)] \,du} = \m{\int \! f(u)\,du \: \pm \: \int\! g(u) \,du}
 		\item \m{ \int  du} = \m{u + C}
@@ -360,8 +371,11 @@
 		\item \m{\int \! \dfrac{du}{\sqrt{a^2 - u^2}}} = \m{\arcsin\left( \dfrac{u}{a} \right) + C}
 		\item \m{\int \! \dfrac{du}{a^2 + u^2}} = \m{\dfrac{1}{a}\arctan\left( \frac{u}{a} \right) + C}
 		\item \m{\int \! \dfrac{du}{u \sqrt{u^2 - a^2}}} = \m{\dfrac{1}{a}\arcsec\left( \dfrac{|u|}{a} \right) + C}	
-	\end{enumerate}\end{multicols}	
+	\end{enumerate}
+	\end{multicols}	
 	\phantom{a} \vspace{-0.2cm}
-\end{minipage} } \end{center}
+\end{minipage}
+} % fbox
+\end{center}
 
 \end{document}
